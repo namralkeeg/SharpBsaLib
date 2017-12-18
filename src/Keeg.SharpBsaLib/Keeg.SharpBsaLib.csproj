@@ -46,10 +46,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Archive.cs" />
+    <Compile Include="DDS\DDS.cs" />
+    <Compile Include="DDS\DdsEnums.cs" />
+    <Compile Include="DDS\DdsHeader.cs" />
+    <Compile Include="DDS\DdsHeaderDx10.cs" />
+    <Compile Include="DDS\DdsPixelFormat.cs" />
+    <Compile Include="Entry.cs" />
+    <Compile Include="Folder.cs" />
+    <Compile Include="IArchive.cs" />
+    <Compile Include="IEntry.cs" />
+    <Compile Include="IFolder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\external\Keeg.IO\Keeg.IO\Keeg.IO.csproj">
+      <Project>{bc1fac0f-f5ef-4f41-9643-a1a1eab93b5f}</Project>
+      <Name>Keeg.IO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

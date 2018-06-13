@@ -11,6 +11,7 @@
     <AssemblyName>Keeg.SharpBsaLib</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -47,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Archive.cs" />
+    <Compile Include="Common\Utils.cs" />
     <Compile Include="DDS\DDS.cs" />
     <Compile Include="DDS\DdsEnums.cs" />
     <Compile Include="DDS\DdsHeader.cs" />
@@ -55,8 +57,6 @@
     <Compile Include="Entry.cs" />
     <Compile Include="Folder.cs" />
     <Compile Include="IArchive.cs" />
-    <Compile Include="IEntry.cs" />
-    <Compile Include="IFolder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

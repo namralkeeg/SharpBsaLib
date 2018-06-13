@@ -20,7 +20,7 @@ namespace Keeg.SharpBsaLib
         #endregion
 
         #region Properties
-        public abstract IReadOnlyCollection<IEntry> Entries { get; }
+        public abstract IReadOnlyCollection<Entry> Entries { get; }
         public string FullName { get; protected set; }
         public string FullPath => Path.GetFullPath(FullName);
         public string Name => Path.GetFileName(FullName);
@@ -82,16 +82,16 @@ namespace Keeg.SharpBsaLib
         public abstract bool IsArchive(Stream stream);
 
         public abstract bool Extract(string filePath, out byte[] data);
-        public abstract bool Extract(IEntry entry, out byte[] data);
+        public abstract bool Extract(Entry entry, out byte[] data);
         public abstract bool Extract(string filePath, string destinationFolder, bool overwrite);
-        public abstract bool Extract(IEntry entry, string destinationFolder, bool overwrite);
+        public abstract bool Extract(Entry entry, string destinationFolder, bool overwrite);
         public abstract bool Extract(IEnumerable<string> filePaths, string destinationFolder, bool overwrite);
-        public abstract bool Extract(IEnumerable<IEntry> entries, string destinationFolder, bool overwrite);
+        public abstract bool Extract(IEnumerable<Entry> entries, string destinationFolder, bool overwrite);
         public abstract bool ExtractToFolder(string destinationFolder, bool overwrite);
 
-        public abstract IEnumerable<IEntry> GetEntries(IEnumerable<string> filePaths);
-        public abstract IEntry GetEntry(string filePath);
-        public abstract IEnumerable<IEntry> GetMatchingEntries(Regex regex);
+        public abstract IEnumerable<Entry> GetEntries(IEnumerable<string> filePaths);
+        public abstract Entry GetEntry(string filePath);
+        public abstract IEnumerable<Entry> GetMatchingEntries(Regex regex);
         public abstract bool HasEntry(string filePath);
 
         public byte[] GetEntryChecksum(string filePath, HashAlgorithm hasher)
@@ -115,7 +115,7 @@ namespace Keeg.SharpBsaLib
             return checksum;
         }
 
-        public byte[] GetEntryChecksum(IEntry entry, HashAlgorithm hasher)
+        public byte[] GetEntryChecksum(Entry entry, HashAlgorithm hasher)
         {
             return GetEntryChecksum(entry.FullName, hasher);
         }

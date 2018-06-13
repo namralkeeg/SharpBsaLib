@@ -2,17 +2,17 @@
 
 namespace Keeg.SharpBsaLib
 {
-    public class Folder : IFolder
+    public class Folder /*: IFolder*/
     {
-        protected IList<IFolder> children = new List<IFolder>();
-        protected IList<IEntry> entries = new List<IEntry>();
+        protected List<Folder> children = new List<Folder>();
+        protected List<Entry> entries = new List<Entry>();
 
-        public IFolder Parent { get; set; }
-        public IList<IFolder> Children => children;
-        public IList<IEntry> Entries => entries;
+        public Folder Parent { get; set; }
+        public IList<Folder> Children => children;
+        public IList<Entry> Entries => entries;
         public string Name { get; set; }
 
-        public int CompareTo(IFolder other)
+        public int CompareTo(Folder other)
         {
             return Name.CompareTo(other.Name);
         }

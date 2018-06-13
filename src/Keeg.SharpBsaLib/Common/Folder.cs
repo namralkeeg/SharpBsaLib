@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Keeg.SharpBsaLib
+namespace Keeg.SharpBsaLib.Common
 {
     public class Folder /*: IFolder*/
     {

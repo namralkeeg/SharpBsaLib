@@ -117,7 +117,7 @@ namespace Keeg.SharpBsaLib
 
         public byte[] GetEntryChecksum(Entry entry, HashAlgorithm hasher)
         {
-            return GetEntryChecksum(entry.FullName, hasher);
+            return GetEntryChecksum(entry.Name, hasher);
         }
         #endregion
     }

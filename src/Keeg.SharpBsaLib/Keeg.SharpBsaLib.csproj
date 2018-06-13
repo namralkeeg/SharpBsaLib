@@ -55,7 +55,6 @@
     <Compile Include="DDS\DdsHeaderDx10.cs" />
     <Compile Include="DDS\DdsPixelFormat.cs" />
     <Compile Include="Entry.cs" />
-    <Compile Include="Common\Folder.cs" />
     <Compile Include="IArchive.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

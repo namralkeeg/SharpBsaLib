@@ -48,7 +48,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Archive.cs" />
+    <Compile Include="Common\INameTransform.cs" />
     <Compile Include="Common\Utils.cs" />
+    <Compile Include="Common\WindowsNameTransform.cs" />
     <Compile Include="DDS\DDS.cs" />
     <Compile Include="DDS\DdsEnums.cs" />
     <Compile Include="DDS\DdsHeader.cs" />
@@ -67,6 +69,8 @@
       <Name>Keeg.IO</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Bsa\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

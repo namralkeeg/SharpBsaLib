@@ -48,7 +48,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Archive.cs" />
+    <Compile Include="Common\ExtendedPathFilter.cs" />
+    <Compile Include="Common\INameFilter.cs" />
     <Compile Include="Common\INameTransform.cs" />
+    <Compile Include="Common\NameFilter.cs" />
+    <Compile Include="Common\PathFilter.cs" />
     <Compile Include="Common\Utils.cs" />
     <Compile Include="Common\WindowsNameTransform.cs" />
     <Compile Include="DDS\DDS.cs" />

@@ -54,6 +54,7 @@
     <Compile Include="Common\INameFilter.cs" />
     <Compile Include="Common\INameTransform.cs" />
     <Compile Include="Common\NameFilter.cs" />
+    <Compile Include="Common\PartialInputStream.cs" />
     <Compile Include="Common\PathFilter.cs" />
     <Compile Include="Common\ProgressEventArgs.cs" />
     <Compile Include="Common\ScanEventArgs.cs" />

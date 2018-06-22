@@ -31,7 +31,7 @@ namespace Keeg.SharpBsaLib.Common
         /// <summary>
         /// Get / set a value indicating if scanning should continue or not.
         /// </summary>
-        public bool ContinuteRunning { get; set; } = true;
+        public bool ContinueRunning { get; set; } = true;
 
         /// <summary>
         /// Get a percentage representing how much of the <see cref="Target"></see> has been processed

@@ -48,6 +48,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Archive.cs" />
+    <Compile Include="Common\BinaryReaderHelpers.cs" />
+    <Compile Include="Common\ByteSwap.cs" />
     <Compile Include="Common\DirectoryEventArgs.cs" />
     <Compile Include="Common\ExtendedPathFilter.cs" />
     <Compile Include="Common\FileSystemScanner.cs" />
